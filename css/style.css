@@ -1,0 +1,126 @@
+
+/* màn laptop lenovo */
+@media only screen and (min-width: 960px) and (max-width: 1918px) {
+	.hang1{
+	  display:flex;
+	  position: absolute;
+	  left: 160px;
+	  top: 60px;
+	}
+	.hang2{
+	  position: absolute;
+	  display: flex;
+	  left: 670px;
+	  top: 60px;
+	}
+	.hang3{
+	  position: absolute;
+	  display: flex;
+	  left: 160px;
+	  top: 196px;
+	}
+	.hang4{
+	  position: absolute;
+	  display: flex;
+	  left: 670px;
+	  top: 196px;
+	}
+	.hang5{
+	  position: absolute;
+	  display: flex;
+	  left: 160px;
+	  top: 366px;
+	}
+	.hang6{
+	  position: absolute;
+	  display: flex;
+	  left: 160px;
+	  top: 506px;
+	}
+	.phong {
+	  text-align: center;
+	  width: 114px;
+	  height: 90px;
+	  border-radius: 5px;
+	  border: red solid 1px;
+	  margin-left: 28px;
+	  padding-top: 20px;
+	  color: purple;
+	}
+	#desc{
+	  width: 410px;
+	  position: absolute;
+	  top: 400px;
+	  left: 770px;
+	  color: green;
+	}
+	.home{
+	  display:flex;
+	  position: absolute;
+	  left: 60px;
+	  top: 30px;
+	}
+}
+
+/* màn rời fpt */
+@media all and (min-width:1919px)  {
+	.hang1{
+	  display:flex;
+	  position: absolute;
+	  left: 425px;
+	  top: 60px;
+	}
+	.hang2{
+	  position: absolute;
+	  display: flex;
+	  left: 1013px;
+	  top: 60px;
+	}
+	.hang3{
+	  position: absolute;
+	  display: flex;
+	  left: 425px;
+	  top: 240px;
+	}
+	.hang4{
+	  position: absolute;
+	  display: flex;
+	  left: 1013px;
+	  top: 240px;
+	}
+	.hang5{
+	  position: absolute;
+	  display: flex;
+	  left: 425px;
+	  top: 416px;
+	}
+	.hang6{
+	  position: absolute;
+	  display: flex;
+	  left: 425px;
+	  top: 592px;
+	}
+	.phong {
+	  text-align: center;
+	  width: 130px;
+	  height: 106px;
+	  border-radius: 5px;
+	  border: red solid 1px;
+	  margin-left: 28px;
+	  padding-top: 20px;
+	  color: blue;
+	}
+	#desc{
+	  width: 410px;
+	  position: absolute;
+	  top: 480px;
+	  left: 1090px;
+	  color: green;
+	}
+	.home{
+	  display:flex;
+	  position: absolute;
+	  left: 120px;
+	  top: 30px;
+	}
+}
