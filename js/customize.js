@@ -58,7 +58,7 @@ function choice(cs) {
 		console.log('click = 1')
 		console.log('check count close',count_close)
 		if (count_close == 0){
-			a = setTimeout(reload, 7000);
+			a = setTimeout(CloseWindow, 7000);
 		}
 		
 	}
@@ -67,7 +67,7 @@ function choice(cs) {
 		console.log('click > 1');
 		if (count_close == 0){
 			clearTimeout(a);
-			a = setTimeout(reload, 7000);
+			a = setTimeout(CloseWindow, 7000);
 		}
 		
 	}
