@@ -6,11 +6,11 @@ function CloseWindow() {
 var count_close = 0;
 function countTouches(event) {
   var x = event.touches.length;
-  console.log('so lan cham',x);
+  console.log('so diem cham',x);
   if (x >1) {
   	count_close +=1;
   	setTimeout(CloseWindow, 5000);
-  	console.log('count_close', count_close)
+  	// console.log('count_close', count_close)
   }
 }
 
@@ -149,7 +149,3 @@ function choice(cs) {
 	bgimg.html(bg_image)
 
 	}
-
-
-
-   
