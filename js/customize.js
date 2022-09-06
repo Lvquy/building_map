@@ -1,6 +1,40 @@
 
+function CloseWindow() {
+	window.close();
+}
+
+var count_close = 0;
+function countTouches(event) {
+  var x = event.touches.length;
+  console.log('so lan 2 cham',x);
+  if (x >1) {
+  	count_close +=1;
+  	setTimeout(CloseWindow, 5000);
+  	console.log('count_close', count_close)
+  }
+}
+
+// disable ctrl + , ctrl - 
+$(document).keydown(function(event) {
+if (event.ctrlKey==true && (event.which == '61' || event.which == '107' || event.which == '173' || event.which == '109'  || event.which == '187'  || event.which == '189'  ) ) {
+        event.preventDefault();
+     }
+    // 107 Num Key  +
+    // 109 Num Key  -
+    // 173 Min Key  hyphen/underscore key
+    // 61 Plus key  +/= key
+});
+
+$(window).bind('mousewheel DOMMouseScroll', function (event) {
+       if (event.ctrlKey == true) {
+       event.preventDefault();
+       }
+});
+// disable ctrl + , ctrl - 
+
 var click = 0;
 var choice_phong_id = 0;
+
 function reload(){
 	window.location.reload();
 }
@@ -15,20 +49,27 @@ function f5(){
 }
 
 function choice(cs) {
-	f5()
+
+	f5();
 	choice_phong_id = cs;
 	console.log(choice_phong_id)	
 	click +=1;
 	if (click == 1){
 		console.log('click = 1')
-		a = setTimeout(reload, 5000);
+		console.log('check count close',count_close)
+		if (count_close == 0){
+			a = setTimeout(reload, 7000);
+		}
+		
 	}
 	
 	if (click > 1){
-
 		console.log('click > 1');
-		clearTimeout(a);
-		a = setTimeout(reload, 5000);
+		if (count_close == 0){
+			clearTimeout(a);
+			a = setTimeout(reload, 7000);
+		}
+		
 	}
 	var div = $("#"+cs)
 	var desc = $("#desc")

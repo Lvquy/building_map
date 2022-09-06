@@ -3,11 +3,18 @@
 <head>
   <title>Map</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body   onmousedown = 'return false'
+        onselectstart = 'return false'
+        oncopy = 'return false'
+        oncut = 'return false'
+        ontouchstart='countTouches(event)'
+        ontouchend='countTouches(event)'
+        
+        >
   <div class="container">
     <div class="no_row">
       <div id="bg-img">
@@ -16,7 +23,7 @@
       <div class="home">
         <a id="home"  href="./index.html" class="btn btn-primary">F5(refesh)</a>
       </div>
-
+    
       <div class="hang1 h2">
         <div class="phong" id="P10" onclick="choice('P10')">P10</div>
         <div class="phong" id="P11" onclick="choice('P11')">P11</div>
