@@ -133,7 +133,7 @@
 	.hang2{
 	  position: absolute;
 	  display: flex;
-	  left: 1013px;
+	  left: 990px;
 	  top: 60px;
 	}
 	.hang3{
@@ -145,20 +145,20 @@
 	.hang4{
 	  position: absolute;
 	  display: flex;
-	  left: 1013px;
+	  left: 990px;
 	  top: 240px;
 	}
 	.hang5{
 	  position: absolute;
 	  display: flex;
 	  left: 425px;
-	  top: 416px;
+	  top: 385px;
 	}
 	.hang6{
 	  position: absolute;
 	  display: flex;
 	  left: 425px;
-	  top: 592px;
+	  top: 565px;
 	}
 	.phong {
 	  text-align: center;
