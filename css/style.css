@@ -169,6 +169,14 @@
 	  margin-left: 28px;
 	  padding-top: 20px;
 	  color: blue;
+	  
+	}
+	#select_p{
+	  width: 410px;
+	  position: absolute;
+	  top: 480px;
+	  left: 1090px;
+	  color: red;
 	}
 	#desc{
 	  width: 410px;
@@ -177,10 +185,33 @@
 	  left: 1090px;
 	  color: green;
 	}
+	#description_p{
+	  width: 410px;
+	  position: absolute;
+	  top: 590px;
+	  left: 1090px;
+	  color: blue;
+	}
 	.home{
 	  display:flex;
 	  position: absolute;
 	  left: 120px;
-	  top: 30px;
+	  top: 90%;
 	}
+
+	@keyframes my {
+		0% { color: blue; }
+		50% { color: red; }
+		100% { color: blue; }
+	}
+
+	.select_p {
+		font-size:24px;
+		font-weight:bold;
+		-webkit-animation: my 700ms infinite;
+		-moz-animation: my 700ms infinite;
+		-o-animation: my 700ms infinite;
+		animation: my 700ms infinite;
+		}
+
 }

@@ -25,7 +25,7 @@
       </div>
     
       <div class="hang1 h2">
-        <div class="phong" id="P10" onclick="choice('P10')">P10</div>
+        <div class="phong" id="P10" onclick="choice('P10')"><p>P10</p></div>
         <div class="phong" id="P11" onclick="choice('P11')">P11</div>
         <div class="phong" id="P12" onclick="choice('P12')">P12</div>
       </div>
@@ -54,9 +54,27 @@
         <div class="phong" id="P2" onclick="choice('P2')">P2</div>
       </div>
       
+      <div id="select_p">
+        <h6 class="select_p">Bạn cần làm gì?</h6>
+          <input onclick="choice('P2')" type="radio" id="2" name="input">
+          <label for="2">Gửi tiết kiệm</label><br>
 
+          <input onclick="choice('P3')" type="radio" id="3" name="input">
+          <label for="3">Làm thẻ ATM</label><br>
+
+          <input onclick="choice('P4')" type="radio" id="4" name="input">
+          <label for="4">Rút tiền</label><br>
+
+          <input onclick="choice('P7')" type="radio" id="7" name="input">
+          <label for="7">Gặp giám đốc</label><br>
+
+          <input onclick="choice('P18')" type="radio" id="18" name="input">
+          <label for="18">Cần tư vấn, giải đáp</label><br>
+        
+      </div>
       <div id='desc'>
       </div>
+      <div id='description_p'></div>
     </div>
   </div>
 
