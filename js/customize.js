@@ -1,3 +1,7 @@
+window.addEventListener('contextmenu', (ev) => {
+  ev.preventDefault();
+  console.log('right clicked')
+});
 
 function CloseWindow() {
 	window.close();
