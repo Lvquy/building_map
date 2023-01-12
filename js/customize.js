@@ -53,7 +53,7 @@ function f5(){
 }
 
 function choice(cs) {
-	const time_close = 1400000000; // timeout close browser 
+	const time_close = 15000; // timeout close browser 
 	f5();
 	choice_phong_id = cs;
 	console.log(choice_phong_id)	
