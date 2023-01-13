@@ -1,12 +1,19 @@
+
+//disable right click
 window.addEventListener('contextmenu', (ev) => {
   ev.preventDefault();
   console.log('right clicked')
 });
+//disable right click
 
+// close window
 function CloseWindow() {
 	window.close();
 }
+// close window
 
+
+// touch > 1 co kha nang bi zoom, can close browse de reset lai
 var count_close = 0;
 function countTouches(event) {
   var x = event.touches.length;
@@ -68,7 +75,7 @@ function choice(cs) {
 	}
 	
 	if (click > 1){
-		console.log('click > 1');
+		console.log('click > 1', click);
 		if (count_close == 0){
 			clearTimeout(a);
 			a = setTimeout(CloseWindow, time_close);
@@ -175,4 +182,4 @@ function choice(cs) {
 	bgimg.html(bg_image);
 	description_p.html(desc_p_content)
 
-	}
+}
